@@ -1,0 +1,44 @@
+﻿@model IEnumerable<houses.Models.Houses.HousesListViewModel>
+
+
+@{
+    int queueNumber = 0;
+}
+<div>
+    <a asp-action="add" asp-controller="Houses" type="submit" class="btn btn-danger">Add</a>
+</div>
+<form method="post">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Nr</th>
+                <th scope="col">Name</th>
+                <th scope="col">Model</th>
+                <th scope="col">Description</th>
+                <th scope="col">Designer</th>
+                <th scope="col">Price</th>
+                <th scope="col">Ammount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var houses in Model)
+            {
+                queueNumber++;
+                <tr>
+                    <td class="">@queueNumber</td>
+                    <td class="">@houses.Name</td>
+                    <td class="">@houses.Model</td>
+                    <td class="">@houses.Description</td>
+                    <td class="">@houses.Designer</td>
+                    <td class="">@houses.Price</td>
+                    <td class="">@houses.Amount</td>
+                    <td>
+                        <a asp-action="edit" asp-controller="houses" asp-route-id="@houses.Id" class="btn btn-primary">Edit</a>
+
+                        <input asp-action="delete" asp-controller="houses" asp-route-id="@houses.Id" type="submit" class="btn btn-danger" value="Delete" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
