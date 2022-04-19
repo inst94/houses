@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "houses", "houses\houses.csproj", "{EF7E6238-EAC5-4D82-B435-C3D705098415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "houses", "houses\houses.csproj", "{EF7E6238-EAC5-4D82-B435-C3D705098415}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "houses.Core", "houses.Core\houses.Core.csproj", "{3B0CCB6C-89E2-4947-B8DD-37FBCCE957B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "houses.Core", "houses.Core\houses.Core.csproj", "{3B0CCB6C-89E2-4947-B8DD-37FBCCE957B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "houses.Data", "houses.Data\houses.Data.csproj", "{E1575B2E-A65A-41AB-A8AF-406E5C25F29C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "houses.Data", "houses.Data\houses.Data.csproj", "{E1575B2E-A65A-41AB-A8AF-406E5C25F29C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "houses.ApplicationServices", "shop.ApplicationServices\houses.ApplicationServices.csproj", "{E962CF55-5CF9-4853-8253-7B7B7CEB837C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "houses.ApplicationServices", "shop.ApplicationServices\houses.ApplicationServices.csproj", "{E962CF55-5CF9-4853-8253-7B7B7CEB837C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "houses.housesTests", "houses.housesTests\houses.housesTests.csproj", "{C8E11B44-6547-4A89-8928-F63C05C55528}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E962CF55-5CF9-4853-8253-7B7B7CEB837C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E962CF55-5CF9-4853-8253-7B7B7CEB837C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E962CF55-5CF9-4853-8253-7B7B7CEB837C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8E11B44-6547-4A89-8928-F63C05C55528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E11B44-6547-4A89-8928-F63C05C55528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E11B44-6547-4A89-8928-F63C05C55528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E11B44-6547-4A89-8928-F63C05C55528}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
